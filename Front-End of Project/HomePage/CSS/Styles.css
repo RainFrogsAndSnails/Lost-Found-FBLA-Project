@@ -1,0 +1,6 @@
+/* Basic CSS Reset to prevent default browser size altering styles */
+* {
+    margin: 0; 
+    box-sizing: border-box; 
+    padding: 0;
+}
