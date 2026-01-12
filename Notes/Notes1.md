@@ -28,6 +28,9 @@ CTRL + SHIFT + M <!--Opens problems tab to show errors and warnings in the code-
 CTRL + K + V <!--Opens markdown preview to the side-->
 
 CTRL + SHIFT + 3 <!-- 3D view of html layout>
+
+ALT + X <!--Color picker-->
+
   <!-- Very Usfull -->
 
 Hello There! Did you know you can set up break points in the code for debugging it! just place it inbetween the lines of code of the left hand side with the numbers on it.

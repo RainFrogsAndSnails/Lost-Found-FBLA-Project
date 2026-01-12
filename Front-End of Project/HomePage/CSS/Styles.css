@@ -1,9 +1,11 @@
-/* Basic CSS Reset to prevent default browser size altering styles */
+/* Global Styles */
+:root {
+    --custom-variable-filler: 100;
+}
+
+/* ALl item selectors */
 * {
-    margin: 0; 
-    box-sizing: border-box; 
-    padding: 0;
+    border: 1px solid black;
+
 }
-h1 {
-    color: rgb(0, 0, 0);
-}
+

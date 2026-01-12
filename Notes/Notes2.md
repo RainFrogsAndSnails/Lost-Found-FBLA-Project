@@ -52,13 +52,13 @@
 <!-- <meta name="msapplication-TileColor" content="#your-color-code"> -->
 <!-- <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> -->
 
-<!-- Favicon Links -->
+*<!-- Favicon Links -->
 <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
 <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> -->
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
 
 <!-- Canonical URL -->
-<!-- <link rel="canonical" href="https://yourwebsite.com/current-page"> -->
+<!-- <link rel="canonical" href="https://yourwebsite.com/current-page"> -->*
 ```
 
 ## Example Implementation
@@ -110,8 +110,92 @@
     li:nth-child(even) {}
     li:nth-child(3) {}
     You can also use media queries like so:
-    @media (max-width: 600px) {
-        body { background-color: lightblue; }command:github.copilot.toggleStatusMenu
+    
+    /* BASE MEDIA QUERY - Mobile First Approach */
+    /* This is the most common and recommended pattern for responsive design */
+    /* Start with styles for mobile devices, then use min-width to add styles for larger screens */
+    @media (min-width: 768px) {
+        /* Styles for tablets and larger devices */
+        body { font-size: 16px; }
+    }
+
+    /* RESPONSIVE BREAKPOINTS */
+    /* Extra small devices (phones) */
+    @media (max-width: 480px) {
+        body { font-size: 14px; }
+        .container { padding: 10px; }
+    }
+
+    /* Small devices (landscape phones, tablets) */
+    @media (min-width: 481px) and (max-width: 768px) {
+        body { font-size: 15px; }
+        .container { padding: 15px; }
+    }
+
+    /* Medium devices (tablets, small desktops) */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        body { font-size: 16px; }
+        .container { max-width: 750px; }
+    }
+
+    /* Large devices (desktops) */
+    @media (min-width: 1025px) {
+        body { font-size: 18px; }
+        .container { max-width: 1200px; }
+    }
+
+    /* ORIENTATION-BASED MEDIA QUERIES */
+    /* Portrait orientation (taller than wide) */
+    @media (orientation: portrait) {
+        .sidebar { width: 100%; }
+    }
+
+    /* Landscape orientation (wider than tall) */
+    @media (orientation: landscape) {
+        .sidebar { width: 30%; float: left; }
+    }
+
+    /* ACCESSIBILITY MEDIA QUERIES */
+    /* Prefers reduced motion - for users with vestibular disorders or motion sensitivity */
+    @media (prefers-reduced-motion: reduce) {
+        * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    }
+
+    /* Prefers color scheme - respects user's light/dark mode preference */
+    @media (prefers-color-scheme: dark) {
+        body { background-color: #1a1a1a; color: #ffffff; }
+    }
+
+    @media (prefers-color-scheme: light) {
+        body { background-color: #ffffff; color: #000000; }
+    }
+
+    /* High contrast mode - for users who need better contrast */
+    @media (prefers-contrast: more) {
+        body { border: 2px solid #000; }
+        a { text-decoration: underline; }
+    }
+
+    /* Reduced transparency - for users sensitive to transparency effects */
+    @media (prefers-reduced-transparency: reduce) {
+        .modal { opacity: 1 !important; background: solid colors only; }
+    }
+
+    /* DEVICE-SPECIFIC MEDIA QUERIES */
+    /* High DPI screens (Retina displays) */
+    @media (min-resolution: 192dpi) {
+        img { image-rendering: crisp-edges; }
+    }
+
+    /* Touch-capable devices */
+    @media (hover: none) and (pointer: coarse) {
+        button { padding: 15px; } /* Make buttons larger for touch */
+        a { padding: 10px; } /* Add padding around clickable elements */
+    }
+
+    /* Hover-capable devices (mouse/trackpad) */
+    @media (hover: hover) and (pointer: fine) {
+        button:hover { background-color: #0056b3; }
     }
 
 -->
