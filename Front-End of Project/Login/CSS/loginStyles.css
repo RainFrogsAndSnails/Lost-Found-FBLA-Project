@@ -1,0 +1,11 @@
+/* Global Styles */
+:root {
+    --custom-variable-filler: 100;
+}
+
+/* ALl item selectors */
+* {
+    border: 1px solid black;
+
+}
+

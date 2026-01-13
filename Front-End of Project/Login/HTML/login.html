@@ -16,6 +16,7 @@
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
   </head>
+  <!-- Body -->
   <body>
     <div id="container">
       <header>
@@ -23,10 +24,11 @@
         <nav id="pagenav">
           <!-- * TODO: Add navigation links to the other pages-->
           <!-- !WARNING: There are no other pages currently -->
+           <!-- * Navigation links for other pages -->
           <ul class="nav-list nav-list-horizontal">
             <li>
-              <a href="">
-                <img src="" alt="" />
+              <a href="../../HomePage/HTML/Index.html">
+                <img src="" alt="Home Page Button/Link" />
               </a>
             </li>
             <li>
@@ -62,10 +64,39 @@
           </ul>
         </nav>
       </header>
-      <main></main>
+
+      <main>
+        <div id="loginDiv">
+          <h2>Login</h2>
+          <form id="loginForm" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <button id="loginButton" type="submit">Login</button>
+          </form>
+        </div>
+      </main>
       <footer>
-        <address></address>
+        <address>
+          <div class="container addressDiv">
+            <p>
+              Tolleson Union Highschool District Lost&Found not reserved.            
+            </p>
+            <p>Tuhsd.org is not responsible for this site or any of its content only its creator.</p>
+            <p>If requested this site can be taken down by the creator or the school district.</p>
+          </div>
+          <div class="container addressDiv">
+            <p>Draven D. - <a href="mailto:dravend09524@student.tuhsd.org">dravend09524@student.tuhsd.org</a></p>
+            <p>No Copy Rights Reserved</p>
+          </div>
+        </address>
       </footer>
     </div>
   </body>
+  <script src="../JS/loginStyles.js">
+
+  </script>
 </html>
