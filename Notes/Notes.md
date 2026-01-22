@@ -67,25 +67,19 @@ Visual hierarchy is important as it conveys other components like the navigation
 
 - Without clearly defining project scope, things can get out of hand and go over budget. So, it's best to be as detailed as possible about what is expected to be delivered and by when.
 
-**Absolute units**:
-
-Remember that margin is the space outside of the box. So, in this example, the box will have a margin of 10px on all sides.
-
-Other types of absolute units include the following:
-
-The in (inches) unit, which is equal to 96px
-The cm (centimeters) unit, which is equal to 25.2/64 of an inch
-The mm (millimeters) unit, which is equal to 1/10th of a centimeter
-The q (quarter-millimeters) unit, which is equal to 1/40th of a centimeter
-The pc (picas) unit, which is equal to 1/6th of an inch
-The pt (points) unit, which is equal to 1/72th of an inch
-Most of these units will be used for print and not for screens.
-
-While the most common unit you will use is pixels, it is important to know that the other absolute units exist.
-
-**Relative Units**:
-
-Em is relative to its parent's text size(Usually 16px). (Use for text size and containers of text)
-Good use cases for ems would be when you are working with modular components like buttons or cards. By using em units, you can ensure that all aspects of the component (such as padding, margin, and borders) scale proportionally with the font size, keeping consistent proportions.
-Rem is relative to the root element's text size(16px). (Use for text size and containers of text)
-So when should you use rem units? rem units are preferred over pixels for typography because they scale proportionally with the user's browser settings. This makes your content more accessible to users with visual impairments.
+Absolute Units
+px (Pixels): This absolute unit is a fixed-size unit of measurement in CSS. It is the most common absolute unit and provides precise control over dimensions. 1px is always equal to 1/96th of an inch.
+in (Inch): This absolute unit is equal to 96px.
+cm (Centimeters): This absolute unit is equal to 25.2/64 of an inch.
+mm (Millimeters): This absolute unit is equal to 1/10th of a centimeter.
+q (Quarter-Millimeters): This absolute unit is equal to 1/40th of a centimeter.
+pc (Picas): This absolute unit is equal to 1/6th of an inch.
+pt (Points): This absolute unit is equal to 1/72th of an inch.
+Relative Units
+Percentages: These relative units allow you to define sizes, dimensions, and other properties as a proportion of their parent element. For example, if you set width: 50%; on an element, it will occupy half the width of its parent container.
+em Unit: These units are relative to the font size of the element. If you are using ems for the font-size property, the size of the text will be relative to the font size of the parent element.
+rem Unit: These units are relative to the font size of the root element, which is the html element.
+vh Unit: vh stands for "viewport height" and 1vh is equal to 1% of the viewport's height.
+vw Unit: vw stands for "viewport width" and 1vw is equal to 1% of the viewport's width.
+calc Function
+calc() Function: With the calc() function, you can perform calculations directly within your stylesheets to determine property values dynamically. This means that you can create flexible and responsive user interfaces by calculating dimensions based on the viewport size or other elements.
